@@ -1,0 +1,572 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+   
+}
+/* Globals */
+
+.dFlex {
+    display: flex;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.alignStart {
+    align-items: start;
+}
+
+
+.gap10px {
+    gap: 10px;
+}
+
+.gap30px {
+    gap: 30px;
+}
+
+.gap20px {
+    gap: 20px;
+}
+
+.padding10px {
+    padding: 10px;
+}
+
+.mainTextColor {
+    color: #969BA0;
+}
+
+.padding20px {
+    padding: 20px;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.fontSize2rem {
+    font-size: 2rem;
+}
+
+.fontSize1rem {
+    font-size: 1rem;
+}
+
+.fweight400 {
+    font-weight: 400;
+}
+
+.fweight500 {
+    font-weight: 500;
+}
+
+.fweight600 {
+    font-weight: 600;
+}
+
+.primaryColor {
+    color: #969BA0;
+}
+
+/* Aside  */
+
+aside {
+    width: auto;
+    background-color: #FFFFFF;
+    font-size: 1rem;
+}
+
+
+
+.closeIcon {
+    display: none;
+}
+
+
+.asideTopLogo {
+   display: flex;
+   justify-content: space-between;
+   border-radius: 16px;
+   padding: 5px;
+
+}
+
+.asideLogoAndName {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3C4469;
+}
+
+.asideTopIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.asideTopIcons {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.asideLink {
+    position: relative;
+}
+
+.activeLink {
+    background-color: #2F4CDD;
+    width: 8px;
+    height: 67px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: content-box;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.asideLinks article:not(.active) {
+    color: #969BA0;
+    display: flex;
+    gap: 10px;
+}
+
+.asideLinks article h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.active {
+    display: flex;
+    gap: 10px;
+    color: blue;
+    background-color: #FAFBFF;
+    font-weight: 600;
+}
+.active h1 {
+    color: #2F4CDD;
+}
+
+.asideLinks article:not(.activeLink):hover {
+    background-color: #fafbff;
+    cursor: pointer;
+
+}
+
+
+.ordersNumber {
+    background-color: #2F4CDD;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+}
+
+.asideAddMenusInfo {
+    width: 245px;
+    height: 190px;
+    background: linear-gradient(#2f4cdd,#D45BFF);
+    padding: 20px;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    gap: 10px;
+    margin-top: 70px;
+}
+.asideAddMenusInfo button {
+    padding: 10px;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    border: none;
+}
+
+.asideAddMenusIcon {
+    position: absolute;
+    top: -60px;
+    left: 100px;
+}
+
+.asideAddMenusInfo h4{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.asideAllRights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.asideMenu {
+    color: #3c4469;
+    height: 250px;
+}
+
+.asideAddMenusInfo {
+    padding-top: 60px;
+}
+
+.asideCustomersMoreLinks {
+ padding-left: 35px;
+}
+
+.asideCustomersMoreLinks a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+    
+}
+
+.asideCustomersMoreLinks a:hover {
+    color: #3c4469;
+}
+
+
+/* Navbar */
+
+nav {
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-sizing: border-box;
+   padding: 20px;
+   height: 120px;
+
+}
+
+.profileIconOnly {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E4954;
+    font-weight: 500;
+}
+
+
+form {
+   border: 1px solid #EBEBEB;
+   border-radius: 8px;
+   height: 40px;
+   padding: 10px;
+   background-color: #FDFDFD;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form input {
+    border: none;
+    outline: none;
+    color: #A4A4A4;
+    width: 500px;
+}
+
+.searchInput span {
+    color: #A4A4A4;
+    width: 30px;
+}
+
+
+
+.activeNavLink {
+    color: #2F4CDD;
+    text-decoration: underline;
+}
+
+.notificationIcon,.messageIcon {
+    position: relative;
+    background-color: #E9ECFF;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.notificationIcon,.messageIcon span {
+    color: #2F4CDD;
+}
+
+.numberOfNotifications,.numberOfMessages {
+    position: absolute;
+    color: white;
+    background-color: #2F4CDD;
+    border-radius: 50%;
+    padding: 5px;
+    top: -10px;
+    left: 30px;
+}
+
+.profileIcon {
+   display: flex;
+   align-items: center;
+   background-color: #2F4CDD;
+   width: 160px;
+   height: 50px;
+   border-radius: 10px;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   position: relative;
+   padding-left: 5px;
+}
+
+.profileIcon img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.giftIcon , .settingsIcon {
+    position: relative;
+    background-color: gray;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.giftIcon {
+    background-color: #F1F1F1;
+}
+
+.settingsIcon {
+    background-color: #FFEBE7;
+}
+
+.numberOfGiftIcon,.statusOfSettings {
+    position: absolute;
+    top: -5px;
+    left: 45px;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+   
+}
+
+
+.numberOfGiftIcon,.statusOfSettings,.numberOfNotifications,.numberOfMessages {
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numberOfGiftIcon {
+    background-color:#3E4954;
+}
+
+.statusOfSettings {
+    background-color: #FF6D4D;
+}
+
+
+
+@media (max-width: 1530px) {
+
+    form input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navLinks {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .asideAddMenusInfo {
+        width: auto;
+    }
+    .asideAddMenusIcon {
+        left:30%;
+    }
+    aside h1 , aside a , .asideMenu {
+        display: none;
+    }
+    aside {
+        width: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    form input {
+        width: 150px
+    }
+}
+
+@media (max-width: 830px) {
+    .notificationIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+   
+    .asideAddMenusInfo {
+        width: 150px;
+    }
+    .asideAddMenusIcon {
+        left:30%;
+    }
+
+    .profileIcon {
+        display: none;
+    }
+    .profileIconOnly {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .messageIcon , .giftIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+     .asideMenu {
+        display: none;
+    }
+    aside h1 , aside a , .asideMenu {
+        display: none;
+    }
+    aside {
+        width: auto;
+    }
+   
+}
+
+@media (max-width: 470px) {
+    .settingsIcon {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .searchInput input {
+        width: 100px;
+    }
+   
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.header-analytics h2 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.header-analytics p {
+    font-size: 16px;
+    color: #969BA0;
+}
+
+.date-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F4F5F9;
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1.5rem;   
+}
+
+.filter {
+    width: 180px;
+    height: 55px;
+}
+
+.filter h3, .filter p {
+    padding-top: 1rem;
+    line-height: 0.5;
+}
+
+.filter h3 {
+    color: #3E4954;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filter p {
+    color: #3E4954;
+    font-size: 12px;
+}
+
+#arrow-img {
+    color: #D3D6E4;
+}
+
+#date-img {
+    color: #2F4CDD;
+}

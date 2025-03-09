@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="assets/css/analytics.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>Analytics</title>
+</head>
+
+<body>
+    <!-- Aside bar  -->
+
+    <aside>
+        <article class="asideTopIcons">
+            <article class="asideLogoAndName">
+                <figure class="asideTopLogo">
+                    <img src="./assets/img/logo.png" alt="Logo">
+                </figure>
+
+            </article>
+
+            <article class="asideTopIcon">
+                <span class="material-symbols-outlined cursorPointer menuIcon">
+                    menu
+                </span>
+                <article class="closeIcon">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </article>
+            </article>
+        </article>
+
+        <article class="asideLinks dFlex flexDirectionColumn gap10px">
+            <article class="asideLink padding20px">
+                <img src="./assets/img/ic_dashboard.png" alt="Dashboard" />
+                <h1>Dashboard</h1>
+                <article class="activeLink"></article>
+            </article>
+
+            <article class="asideLink padding20px asideLinkOrders">
+                <figure>
+                    <img src="./assets/img/ic_order.png" alt="Order " />
+                </figure>
+                <h1 class="fweight500">Orders <span class="ordersNumber">25</span></h1>
+            </article>
+
+            <article class="asideLink asideMenus padding20px dFlex justifyContentSpaceBetween">
+                <article class="asideMenusTextAndIcon">
+                    <img src="./assets/img/menus.png" alt="Menu" />
+                    <h1>Menus</h1>
+                </article>
+                <img src="assets/img/ic_right_arrow.png" alt="Right Arrow" />
+
+
+            </article>
+
+            <article class="asideLink  dFlex flexDirectionColumn padding20px">
+                <article class="dFlex justifyContentSpaceBetween">
+                    <article class="asideCustomersTextAndIcon">
+                        <img src="./assets/img/ic_customer.png" alt="Customer" />
+                        <h1>Customers</h1>
+                    </article>
+                    <img src="./assets/img/ic_bottom_arrow.png" class="Bottom Arrow" />
+                </article>
+                <article class="asideCustomersMoreLinks dFlex flexDirectionColumn">
+                    <a class='mainTextColor' href="#">Add New</a>
+                    <a class="mainTextColor" href="#">Members</a>
+                    <a class="mainTextColor" href="#">General Customers</a>
+                </article>
+            </article>
+
+
+
+
+            <article class="asideLink  padding20px dFlex justifyContentSpaceBetween">
+                <article class="asideAnalyticsTextAndIcon active">
+                    <img src="./assets/img/ic_analytics.png" class="Analytics Logo" />
+                    <h1>Analytics</h1>
+                </article>
+                <img src="./assets/img/ic_right_arrow.png" class="Right Arrow Logo" />
+            </article>
+        </article>
+
+        <article class="asideMenu padding20px dFlex flexDirectionColumn gap20px">
+            <article class="asideAddMenusInfo ">
+                <h4>Organize your menus through button below</h4>
+                <button class="cursorPointer">Add Menus</button>
+                <article class="asideAddMenusIcon">
+                    <img src="./assets/img/addMenusIcon.png" class="Add Menu Icon" />
+                </article>
+            </article>
+            <article class="asideAllRights dFlex flexDirectionColumn gap10px">
+                <h4 class="primaryColor">Davur Restaurant Admin Dashboard</h4>
+                <h6 class="primaryColor">@ 2020 All Rights Reserved</h6>
+
+                <p class="primaryColor">Made with &#128147; by Peterdraw</p>
+            </article>
+        </article>
+
+
+    </aside>
+
+
+    <div class="mainDiv">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <form>
+                <input type="text" placeholder="Search here" name="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </form>
+
+
+            <article class=" dFlex gap20px">
+                <a href="#">About</a>
+                <a class="activeNavLink" href="#">Tools</a>
+                <a href="#">Help</a>
+            </article>
+
+            <section class="dFlex alignItemsCenter gap30px">
+                <article class="notificationIcon">
+                    <figure>
+                        <img src="./assets/img/ic_notification.png" alt="Notification" />
+                        <figcaption class="numberOfNotifications">
+                            <p>12</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <figure class="messageIcon">
+                    <img src="./assets/img/ic_chat.png" alt="Chat" />
+                    <figcaption class="numberOfMessages">
+                        <p>2</p>
+                    </figcaption>
+                </figure>
+                <figure class="giftIcon">
+                    <img src="./assets/img/ic_gift.png" alt="Gift" />
+                    <figcaption class="numberOfGiftIcon">
+                        <p>2</p>
+                    </figcaption>
+                </figure>
+                <figure class="settingsIcon">
+                    <img src="./assets/img/ic_setting.png" alt="Settings" />
+                    <figcaption class="statusOfSettings">
+                        <p>!</p>
+                    </figcaption>
+                </figure>
+                <article class="profileIcon">
+                    <p class="colorWhite">Hello, Samuel</p>
+                    <figure class="profileIconImage">
+                        <img src="./assets/img/profileImage.png" alt="Profile">
+                    </figure>
+                </article>
+                <figure class="profileIconOnly">
+                    <img src="./assets/img/profileImage.png" alt="Profile">
+                </figure>
+            </section>
+
+        </nav>
+
+        <header>
+            <div class="header-analytics">
+                <h2>Analytics</h2>
+                <p>Here is your restaurant summary with graph view</p>
+            </div>
+
+            <div class="date-header">
+                <img id="date-img" src="assets/img/analytics/date.png" alt="date" width="28" height="28">
+                <div class="filter">
+                    <h3>Filter Periode</h3>
+                    <p>4 June 2020 - 4 July 2020</p>
+
+                </div>
+                <img id="arrow-img" src="assets/img/analytics/arrow.png" alt="Arrow" width="15px" height="auto">
+            </div>
+        </header>
+
+        <main>
+
+            <section class="section-items">
+                <div class="card-items">
+                    <div class="card-orders">
+                        <div class="card-chart">
+                            <h3>Chart Orders</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                        <div class="card-calendar">
+                            <p id="monthly">Monthly</p>
+                            <p id="week-day">Weekly</p>
+                            <p id="week-day">Daily</p>
+                        </div>
+                    </div>
+
+                    <div class="card-numbers">
+                        <div class="card-total">
+                            <img id="chart-img" src="assets/img/analytics/chart.png" width="24px" height="26px"
+                                alt="chart image">
+                            <h3><sub>257k</sub></h3>
+                        </div>
+
+
+                        <div class="card-total-2">
+                            <img id="chart-img-2" src="assets/img/analytics/chart.png" width="24px" height="26px"
+                                alt="chart image">
+                            <h3><sub>1,245</sub></h3>
+                        </div>
+                    </div>
+                    <div class="card-sales">
+                        <p>Total Sales</p>
+                        <p class="card-sales-2">Avg. Sales per day</p>
+                    </div>
+
+                    <div class="chart-numbers">
+                        <div class="chart-800k">
+                            <p>800k</p>
+                            <hr>
+
+                        </div>
+                        <div class="chart-600k">
+                            <p>600k</p>
+
+                            <hr>
+                        </div>
+                        <div class="chart-400k">
+                            <p>400k</p>
+                            <hr>
+                        </div>
+                        <div class="chart-200k">
+                            <p>200k</p>
+                            <hr>
+                        </div>
+                        <div class="chart-lines">
+                            <img id="lines-img" src="assets/img/analytics/line-chart.png" alt="lines-image">
+                        </div>
+
+                        <hr class="hr2">
+                    </div><br><br>
+                    <div class="chart-months">
+                        <p>Jan</p>
+                        <p>Feb</p>
+                        <p>Mar</p>
+                        <p>Apr</p>
+                        <p>Jun</p>
+                        <p>Jul</p>
+                        <p>Aug</p>
+                        <p>Sep</p>
+                        <p>Oct</p>
+                        <p>Nov</p>
+                    </div>
+                    <div class="chart-message">
+                        <img id="message-img" src="assets/img/analytics/background.png" alt="message-image" width="91px"
+                            height="70.15px">
+                        <div class="order-msg">
+                            <p id="chart-nr">512</p>
+                            <p id="chart-order">Orders</p>
+                        </div>
+                    </div>
+                    <div class="dot">
+                        <img src="assets/img/analytics/dot-line.png" alt="dot-line image" width="40px">
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="trending-items">
+                    <div class="trending-menus">
+                        <div class="trend-item">
+                            <h3>&#128293; Trending Items</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                        <div class="trend-weekly">
+                            <div class="week">
+                                <p class="weekly">Weekly</p>
+                                <img src="assets/img/analytics/arrow1.png" alt="arrow-img" width="10px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-menu">
+                        <p class="ranking">#1</p>
+                        <img id="rank-ima" src="assets/img/analytics/placeholder.png" alt="img" width="80px"
+                            height="80px">
+                        <div class="trending-food">
+                            <p class="food-name">Tuna soup spinach with <br> Himalayan salt</p>
+                            <div class="price-category">
+                                <p class="price">$12.56</p>
+                                <p class="category">MAIN COURSE</p>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sales-top">
+                                <img src="assets/img/analytics/graph1.png" alt="graph-img">
+                                <p class="sales-count">524</p>
+                            </div>
+                            <p class="sales-percentage">Sales (12%)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-menu">
+                        <p class="ranking">#2</p>
+                        <img src="assets/img/analytics/placeholder.png" alt="img" width="80px" height="80px">
+                        <div class="trending-food">
+                            <p class="food-name">Chicken curry special with <br> cucumber</p>
+                            <div class="price-category">
+                                <p class="price">$14.99</p>
+                                <p class="category">MAIN COURSE</p>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sales-top">
+                                <img src="assets/img/analytics/graph2.png" alt="graph-img">
+                                <p class="sales-count">215</p>
+                            </div>
+                            <p class="sales-percentage">Sales (-2%)</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-menu">
+                        <p class="ranking">#3</p>
+                        <img src="assets/img/analytics/placeholder.png" alt="img" width="80px" height="80px">
+                        <div class="trending-food">
+                            <p class="food-name">Italiano pizza with garlic</p>
+                            <div class="price-category">
+                                <p class="price">$14.99</p>
+                                <p class="category">PIZZA</p>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sales-top">
+                                <img src="assets/img/analytics/graph1.png" alt="graph-img">
+                                <p class="sales-count">120</p>
+                            </div>
+                            <p class="sales-percentage">Sales (5%)</p>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-menu">
+                        <p class="ranking">#4</p>
+                        <img src="assets/img/analytics/placeholder.png" alt="img" width="80px" height="80px">
+                        <div class="trending-food">
+                            <p class="food-name">Watermelon juice with ice</p>
+                            <div class="price-category">
+                                <p class="price">$14.99</p>
+                                <p class="category">DRINK</p>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sales-top">
+                                <img src="assets/img/analytics/graph1.png" alt="graph-img">
+                                <p class="sales-count">76</p>
+                            </div>
+                            <p class="sales-percentage4">Sales (12%)</p>
+                        </div>
+                    </div>
+
+                    <div class="trending-menu">
+                        <p class="ranking">#5</p>
+                        <img src="assets/img/analytics/placeholder.png" alt="img" width="80px" height="80px">
+                        <div class="trending-food">
+                            <p class="food-name">Chicken curry special with <br> cucumber</p>
+                            <div class="price-category">
+                                <p class="price">$14.99</p>
+                                <p class="category">MAIN COURSE</p>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="sales-top">
+                                <img src="assets/img/analytics/graph2.png" alt="graph-img">
+                                <p class="sales-count">215</p>
+                            </div>
+                            <p class="sales-percentage">Sales (-2%)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Card 3 -->
+
+            <section class="section-favorite">
+                <div class="card-favorite">
+                    <div class="fav-orders">
+                        <div class="fav-chart">
+                            <div class="fav-items">
+                                <h3>Most Favorites Items</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                            <div class="card-week">
+                                <p id="week">Monthly</p>
+                                <p id="week">Weekly</p>
+                                <p id="today">Today</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="primary">
+                        <div class="menu">
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px"> <br>
+                                <p>Medium Spicy Pizza with <br> Kemangi Leaf</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating.png" alt="rating-img">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class="likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+
+                        </div>
+                        <div class="menu">
+
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px">
+                                <br>
+                                <p>Watermelon Juice with <br> Ice</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating2.png" alt="rating-img">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class="likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="menu">
+
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px">
+                                <br>
+                                <p>Original Italiano Pizza <br> Medium Size</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating.png" alt="rating-img"">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class=" likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <div class="menu">
+
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px">
+                                <br>
+                                <p>Pizza Meal for Kids <br> (Small size)</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating.png" alt="rating-img">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class="likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="menu">
+
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px">
+                                <br>
+                                <p>Meidum Spicy Spagethi <br> Italiano</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating.png" alt="rating-img">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class="likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="menu">
+
+                            <div class="menu-item">
+                                <img src="assets/img/analytics/placeholder1.png" alt="placeholder-img" width="130px"
+                                    height="130px">
+                                <br>
+                                <p>Mozarella Pizza with <br> Random Topping</p>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/img/analytics/rating.png" alt="rating-img">
+                                <p>(454 revies)</p>
+                            </div>
+                            <div class="likes">
+                                <img src="assets/img/analytics/heart.png" alt="heart-img" width="24px" height="24px">
+                                <p><b>256k</b> Like it</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="view-more">
+                        <p>View more</p>
+                        <img src="assets/img/analytics/arrow1.png" alt="arrow">
+                    </div>
+                </div>
+
+
+
+                <!-- Card 4 -->
+
+                <div class="card-selling">
+                    <div class="fav-services">
+                        <div class="chart-services">
+                            <div class="favMenus">
+                                <h3>Most Selling Items</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                            <div class="card-week">
+                                <p id="week">Monthly</p>
+                                <p id="week">Weekly</p>
+                                <p id="today">Today</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selling-menu">
+                        <div class="selling">
+                            <img src="assets/img/analytics/placeholder.png" alt="placeholder-img" width="80px"
+                                height="80px">
+                            <div class="menu-minutes">
+                                <div class="serving-menu">
+                                    <h3>Medium Spicy Spagethi Italiano</h3>
+                                    <p id="food">SPAGETHI</p>
+                                    <div class="serving-minutes">
+                                        <p>Serves for 4 Person | 24mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices">
+                            <p id="price-category">$12.56</p>
+                            <img src="assets/img/analytics/three-dots.png" alt="dots-image" width="20px" height="20px">
+                        </div>
+                    </div>
+
+                    <div class="selling-menu1">
+                        <div class="selling1">
+                            <img src="assets/img/analytics/placeholder.png" alt="placeholder-img" width="80px"
+                                height="80px">
+                            <div class="menu-minutes">
+                                <div class="serving-menu">
+                                    <h3>Pizza Meal for Kids (Small size)</h3>
+                                    <p id="food">PIZZA</p>
+                                    <div class="serving-minutes">
+                                        <p>Serves for 1 Person | 24mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices1">
+                            <p id="price-category">$5.67</p>
+                            <img src="assets/img/analytics/three-dots.png" alt="dots-image" width="20px" height="20px">
+                        </div>
+                    </div>
+
+                    <div class="selling-menu2">
+                        <div class="selling2">
+                            <img src="assets/img/analytics/placeholder.png" alt="placeholder-img" width="80px"
+                                height="80px">
+                            <div class="menu-minutes">
+                                <div class="serving-menu">
+                                    <h3>Supreme Pizza with Beef Topping</h3>
+                                    <p id="food">PIZZA</p>
+                                    <div class="serving-minutes">
+                                        <p>Serves for 2 Person | 24mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices2">
+                            <p id="price-category">$11.21</p>
+                            <img src="assets/img/analytics/three-dots.png" alt="dots-image" width="20px" height="20px">
+                        </div>
+                    </div>
+
+                    <div class="selling-menu3">
+                        <div class="selling3">
+                            <img src="assets/img/analytics/placeholder.png" alt="placeholder-img" width="80px"
+                                height="80px">
+                            <div class="menu-minutes">
+                                <div class="serving-menu">
+                                    <h3>Mozarella Pizza with Random Topping</h3>
+                                    <p id="food">PIZZA</p>
+                                    <div class="serving-minutes">
+                                        <p>Serves for 2 Person | 24mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices3">
+                            <p id="price-category">$8.15</p>
+                            <img src="assets/img/analytics/three-dots.png" alt="dots-image" width="20px" height="20px">
+                        </div>
+                    </div>
+
+                    <div class="selling-menu4">
+                        <div class="selling4">
+                            <img src="assets/img/analytics/placeholder.png" alt="placeholder-img" width="80px"
+                                height="80px">
+                            <div class="menu-minutes">
+                                <div class="serving-menu">
+                                    <h3 id="menu-pizza">Pizza Meal for Kids (Small size)</h3>
+                                    <p id="food1">PIZZA</p>
+                                    <div class="serving-minutes">
+                                        <p id="mins">Serves for 1 Person | 24mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices4">
+                            <p id="price-category">$5.67</p>
+                            <img id="price-nr" src="assets/img/analytics/three-dots.png" alt="dots-image" width="20px"
+                                height="20px">
+                        </div>
+                    </div>
+                    <div class="view-more">
+                        <p>View more</p>
+                        <img src="assets/img/analytics/arrow1.png" alt="arrow">
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+</body>
+
+</html>

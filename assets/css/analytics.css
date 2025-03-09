@@ -1,0 +1,774 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    background-color: #F9F9F9;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.header-analytics h2{
+    font-weight:600;
+    font-size: 28px;
+}
+.header-analytics p{
+    font-size: 18px;
+    color: #969BA0;
+}
+.date-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #F4F5F9;  
+    border: transparent; 
+    border-radius: 12px;
+   padding: 0.5rem 2rem;
+   margin-right: 2.5rem;
+}
+
+.filter{
+    width: 295px;
+    height: 68px;
+}
+.filter h3, .filter p{
+    padding-top: 1rem;
+    line-height: 0.5;
+}
+.filter h3{
+    color:#3E4954;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;  
+}
+.filter p{
+    color: #3E4954;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+#arrow-img{
+    color: #D3D6E4;  
+}
+#date-img{
+    color: #2F4CDD;
+}
+/* Card 1 */
+.section-items {
+    margin-top: 20px;
+    max-width: 100%;
+    height: 480px;
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card-items{
+    background-color: white;
+    border-radius: 20px;
+}
+.card-orders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-analytics h2{
+    font-size: 24px;
+    font-size: 600;
+}
+.header-analytics p{
+    font-size: 15px;
+}
+.card-chart{
+    margin-top: 20px;
+}
+.card-chart h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.card-chart p {
+    font-size: 12px;
+    color: #969BA0;
+}
+
+.card-calendar {
+    display: flex;
+    gap: 10px;
+    background-color: #F9F9F9;
+    border: 5px solid #F9F9F9;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+    padding: 0 24px 0 0;
+    margin-top: 20px;
+}
+
+#monthly {
+    color: #000000;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 12px;
+}
+
+#week-day {
+    font-size: 14px;
+    color: #969BA0;
+}
+
+.card-numbers {
+    display: flex;
+    gap: 5rem;
+    margin-left:10px;
+    margin-top: 20px;
+}
+
+.card-total, .card-total-2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chart-img, .chart-img-2 {
+    color: #A4ACB5;
+}
+
+.card-total h3, .card-total-2 h3 {
+    font-size: 22px;
+}
+
+.card-sales {
+    display: flex;
+    gap: 6rem;
+    margin-left: 45px;
+    margin-bottom: 2rem;
+}
+.card-sales p, .card-sales-2 p {
+    color: #969BA0;
+    font-size: 12px;
+}
+.chart-numbers {
+    display: flex;
+    flex-direction: column;
+    line-height: 3.5; 
+   
+}
+
+.chart-800k, .chart-600k, .chart-400k, .chart-200k {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #3E4954;
+}
+.chart-800k hr, .chart-600k hr, .chart-400k hr, .chart-200k hr {
+    margin-left: 10px;
+    opacity: 0.3;
+    width: 87%;
+}
+.chart-600k hr, .chart-400k hr, .chart-200k hr{
+    z-index: 10; 
+}
+#lines-img{
+    width: 410px;
+    height:auto;
+   margin-left: -8px;
+
+}
+.chart-lines {
+    transform: translate(60px, -165px);
+}
+.chart-months {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-top: -186px;
+    color: #3E4954;
+}
+
+.hr2 {
+    color: #E9ECFF;
+    position: relative;
+    top: -164px;
+    opacity: 0.3;
+    width: 95%;
+}
+
+#message-img {
+    position: relative;
+    top: -227px;
+    left: 293px;
+}
+.order-msg{
+    position: relative;
+    top: -299px;
+    left: 310px;
+
+}
+
+#chart-nr {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#chart-order {
+    font-size: 11px;
+    color: #969BA0;
+}
+
+.dot{
+    transform: translate(303px, -290px);
+}
+
+/* Card 2 */
+.trending-items{
+    background-color: white;
+    width: 46.5%;
+    border-radius: 20px;
+height: fit-content;
+}
+#rank-ima{
+    margin-left: 6px;
+}
+
+.trend-item{
+    margin-top: 20px;
+}
+.trend-item h3{
+font-size: 20px;
+font-weight: 500;
+
+}
+.trend-item p{
+    font-size: 12px;
+    color: #969BA0;
+}
+.trend-weekly{
+    background-color: #F9F9F9;
+    border: 5px solid #F9F9F9;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 45px;
+    padding: 10px 10px 10px 16px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.week{
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+  .week img{
+    color: #ae0a0a;
+  }  
+
+  .trending-menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.trending-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 20px;
+}
+
+.trending-menu img {
+    color: #DADADA;
+    object-fit: cover;
+}
+
+.ranking {
+    font-size: 18px;
+    color: #969BA0;
+    text-align: center;
+    width: 50px; 
+}
+
+.trending-food {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-name {
+    font-size: 13.4px;
+    color: #232323;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+.price-category {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.price {
+    color: #3E4954;
+    font-size: 12px;
+}
+
+.category {
+    color: #2F4CDD;
+    font-size: 10px;
+}
+
+.sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sales-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sales-count {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.sales-percentage {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #969BA0;
+}
+.sales-percentage4 {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #969BA0;
+    margin-left: 10px;
+}
+
+/* Card 3 */
+.section-favorite{
+    margin-top: 20px;
+  width: 96%;
+    height: fit-content;
+    gap: 20px;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 30px;
+    }
+    
+
+.card-favorite{
+        background-color: white;
+        border-radius: 20px;
+        width: 95%;
+        height: fit-content;
+}
+.fav-orders{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 17px;
+    width: 100%;
+
+}
+.fav-chart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.fav-items{
+    margin-top: 20px;
+}
+
+.fav-items h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fav-items p {
+    font-size: 12px;
+    color: #969BA0;
+}
+
+.card-week {
+    display: flex;
+    gap: 10px;
+    background-color: #F9F9F9;
+    border: 5px solid #F9F9F9;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+    padding: 0 2px 0 0;
+    margin-top: 20px;
+}
+#today {
+    color: #000000;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 19px;
+    font-weight: 500;
+}
+
+#week{
+    font-size: 14px;
+    color: #969BA0;
+}
+
+.menu{
+    margin-top: 20px;
+}
+
+.menu-item p{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.rating{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rating img{
+  width: 70px;
+  height: 11px;
+                               
+} 
+.rating p{
+    font-size: 10px;
+    color: #969BA0;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+background-color: #EBEBEB;
+width: 113px;
+height: 35px;
+border-radius: 60px;
+}
+.likes p{
+    font-size: 10px;
+    color: #2F4CDD;
+}
+
+.primary, .secondary{
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+.secondary{
+    margin-top:35px ;
+}
+.view-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+    margin-bottom: 30px;
+    
+}
+.view-more p{
+    color: #2F4CDD;
+    text-decoration: underline;
+}
+
+
+
+
+/* Card 4 }*/
+.card-selling{
+   background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 156px;
+}
+
+.fav-services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 170px;
+    width: 100%;
+
+}
+.chart-services{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.favMenus{
+margin-top: 20px;
+}
+.favMenus h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.favMenus p {
+    font-size: 12px;
+    color: #969BA0;
+}
+
+.selling-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.prices, .prices1, .prices2, .prices3, .prices4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -20px;
+  
+    }
+    #price-category{
+        color: #3E4954;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+
+.serving-menu h3{
+    font-weight: 500;
+    font-size: 14px;
+}
+.serving-menu{ 
+    line-height: 2;
+}
+#food{
+    color:#2F4CDD;
+    font-size: 11px;
+}
+.serving-minutes{
+    font-size: 12px;
+    color: #969BA0;
+    margin-top: 10px;
+    word-spacing: 2px;
+}
+
+.selling-menu1, .selling-menu2, .selling-menu3, .selling-menu4{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.selling, .selling1, .selling2, .selling3, .selling4{
+    display: flex;
+    gap: 20px;
+}
+.selling{
+    margin-left: -20px;
+}
+.selling1{
+    margin-left: -25px;
+}
+.selling2{
+    margin-left: -17px;
+}
+.selling3{
+    margin-left: -17px;
+}
+.selling4{
+    margin-left: -15px;
+}
+.prices1, .prices2, .prices3, .prices4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #3E4954;
+    font-weight: 600;
+    font-size: 20px;
+}
+.prices2{
+    margin-left: -10px;
+}
+.prices3{
+    margin-left: -45px;
+}
+.prices4{
+    margin-left: 20px;
+}
+#food1{
+    color: #6279ea;
+    font-size: 12px;
+}
+
+#menu-pizza{
+    color: #000000b8;
+}
+#mins{
+    color: #bec5ca;  
+}
+#price-nr{
+    color: #697b8d; 
+}
+
+
+
+
+/* Responsive Styles */
+
+/* Tablet (1024px and below) */
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .section-items, .section-favorite {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+    .card-numbers, .card-sales {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px;
+        text-align: center;
+    }
+    .chart-numbers {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .chart-months {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Small Tablets (768px and below) */
+@media (max-width: 768px) {
+    .date-header {
+        padding: 10px;
+        gap: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .filter p {
+        width: 100%;
+        text-align: center;
+    }
+    .trending-menus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .section-favorite, .section-items {
+        width: 100%;
+        align-items: center;
+    }
+    .fav-orders, .fav-services, .fav-chart, .chart-services, 
+    .selling-menu, .selling-menu1, .selling-menu2, .selling-menu3, .selling-menu4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .prices, .prices1, .prices2, .prices3, .prices4 {
+        justify-content: center;
+        text-align: center;
+    }
+    .card {
+        max-width: 280px;
+        padding: 10px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .header-analytics h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .header-analytics p {
+        font-size: 14px;
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .filter {
+        text-align: center;
+        width: 100%;
+    }
+    .section-items, .section-favorite {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        align-items: center;
+    }
+    .card-items, .trending-items {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .date-header {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0.5rem;
+    }
+    .card-numbers, .card-sales {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .trending-menus {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .chart-months {
+        margin: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .card-favorite {
+        margin-top: 30px;
+    }
+    .card {
+        max-width: 260px;
+        padding: 10px;
+    }
+}
