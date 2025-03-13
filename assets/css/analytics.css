@@ -599,9 +599,7 @@ margin-top: 20px;
 
 
 
-/* Responsive Styles */
-
-/* Tablet (1024px and below) */
+/* Responsive */
 @media (max-width: 1024px) {
     header {
         display: flex;
@@ -644,7 +642,7 @@ margin-top: 20px;
     }
 }
 
-/* Small Tablets (768px and below) */
+     /*  */
 @media (max-width: 768px) {
     .date-header {
         padding: 10px;
@@ -682,7 +680,7 @@ margin-top: 20px;
     }
 }
 
-/* Mobile (480px and below) */
+      /*  */
 @media (max-width: 480px) {
     .header-analytics h2 {
         font-size: 18px;
