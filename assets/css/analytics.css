@@ -13,21 +13,15 @@ body {
     background-color: #F9F9F9;
 }
 header{
-    display: flex;
-    justify-content: space-between;
     margin-top: 0.5rem;
 }
 .header-analytics h2{
-    font-weight:600;
-    font-size: 28px;
+    font-size: 22px;
 }
 .header-analytics p{
-    font-size: 18px;
-    color: #969BA0;
+    font-size: 16px;
 }
 .date-header{
-    display: flex;
-    align-items: center;
     gap: 1rem;
     background-color: #F4F5F9;  
     border: transparent; 
@@ -48,7 +42,6 @@ header{
     color:#3E4954;
     font-family: 'Poppins';
     font-size: 16px;
-    font-weight: 600;  
 }
 .filter p{
     color: #3E4954;
@@ -67,40 +60,25 @@ header{
     max-width: 100%;
     height: 480px;
     border-radius: 20px;
-    display: flex;
     gap: 25px;
     margin-bottom: 30px;
 }
 
 .card-items{
-    background-color: white;
     border-radius: 20px;
 }
-.card-orders {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-.header-analytics h2{
-    font-size: 24px;
-    font-size: 600;
-}
-.header-analytics p{
-    font-size: 15px;
-}
+
 .card-chart{
     margin-top: 20px;
 }
 .card-chart h3 {
     font-size: 20px;
-    font-weight: 500;
 }
 
 
 .card-chart p {
     font-size: 12px;
-    color: #969BA0;
 }
 
 .card-calendar {
@@ -128,8 +106,9 @@ header{
 
 #week-day {
     font-size: 14px;
-    color: #969BA0;
+    color: #969BA0;  
 }
+
 
 .card-numbers {
     display: flex;
@@ -153,20 +132,15 @@ header{
 }
 
 .card-sales {
-    display: flex;
     gap: 6rem;
     margin-left: 45px;
     margin-bottom: 2rem;
 }
 .card-sales p, .card-sales-2 p {
-    color: #969BA0;
     font-size: 12px;
 }
 .chart-numbers {
-    display: flex;
-    flex-direction: column;
-    line-height: 3.5; 
-   
+    line-height: 3.5;   
 }
 
 .chart-800k, .chart-600k, .chart-400k, .chart-200k {
@@ -193,8 +167,6 @@ header{
     transform: translate(60px, -165px);
 }
 .chart-months {
-    display: flex;
-    justify-content: center;
     gap: 25px;
     font-size: 13px;
     margin-left: 8px;
@@ -204,11 +176,11 @@ header{
 
 .hr2 {
     color: #E9ECFF;
-    position: relative;
     top: -164px;
     opacity: 0.3;
     width: 95%;
 }
+
 
 #message-img {
     position: relative;
@@ -231,6 +203,7 @@ header{
     font-size: 11px;
     color: #969BA0;
 }
+
 
 .dot{
     transform: translate(303px, -290px);
@@ -497,9 +470,6 @@ border-radius: 60px;
     text-decoration: underline;
 }
 
-
-
-
 /* Card 4 }*/
 .card-selling{
    background-color: white;
@@ -518,8 +488,7 @@ border-radius: 60px;
 }
 .chart-services{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+ 
 }
 .favMenus{
 margin-top: 20px;
